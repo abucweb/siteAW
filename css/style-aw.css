@@ -1,0 +1,202 @@
+ @import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,400,700');
+ @import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+*{
+	padding: 0px;
+	margin: 0px;
+	
+}
+.slider{
+	min-height: 600px;/*min-height:600px; pois 
+	quando estiver no dispositivo movel
+	, os dois article-slider de 600px ficarao
+	 um abaixo do outro, resultando um 
+	 height:1200px; */
+	/*background-image: url("../img/a.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	object-fit:cover;*/
+}
+.article-slider{
+	height: 600px;
+	position: relative;
+	overflow:hidden;
+}
+.bg-1{
+	background-image: url("../img/bg-banner.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.bg-nav{
+	background-color: transparent!important;
+}
+.owl-carousel .item{
+	height: 600px;		
+}
+.p-30{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 40pt;
+	font-weight: 700 !important;
+	color: #222;
+}
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+	font-size: 30pt;
+	font-weight: 700 !important;
+	color: #222 !important;
+}
+.p-15{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 15pt;
+	font-weight: 200 !important;
+	color: #222;
+
+}
+.card-p1,.card-p2,.card-p3{
+	width: 250px;
+	height: 300px;
+	background-color: #fff;
+	box-shadow: 1px 1px 5px gray;
+	border-bottom: 30px solid #1854FF;
+	border-radius: 3px;
+	margin: 0px 20px;
+	transition:.4s;
+	z-index: 10;
+}
+.container-card{
+	margin-top: -100px;
+}
+.card-active{
+	margin-top: -50px;
+}
+.svg-mobile{
+	box-sizing:border-box;
+	padding: 60px;
+	transition: 0.4s;
+}
+.svg-mobile:hover{
+	box-sizing:border-box;
+	padding: 80px;
+	transition: 0.4s;
+}
+#mobile path{	
+	fill:#1854FF;
+}
+/*svg*/
+.svg-sobre{
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+	color: #fff
+}
+#curva path{
+    fill: #1854FF;
+    width: 150px;
+}
+/*svg*/
+.row-sobre{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #1854FF;
+}
+.sobre{
+	min-height: 300px;
+	background-color: transparent;
+	padding-left: 0px;
+}
+.sobre:nth-child(2){
+	padding-right: 0px;
+}
+.itemteste{
+	background-color: #a4b4c4;
+	height: 150px;
+	width: 100%;
+	margin: 20px 0px;
+}
+.itemteste2{
+	background-color: #a4b4c4;
+	height: 320px;
+	width: 100%;
+	margin: 20px 0px;
+	padding-left: 0px;
+}
+.row-services{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #002A54;
+}
+.services{
+	min-height: 300px;
+	background-color: #fff;
+}
+@media(max-width: 990px){
+	.card-p1,.card-p2,.card-p3{
+		width: 100%;
+		margin-top: 20px;
+		margin-right: 0px;
+		margin-left: 0px;		
+	}
+	.navbar-brand{
+	font-size: 15pt;
+}
+	.container{
+		padding: 0px 0px!important;
+	}
+	.slider, .article-slider, .owl-carousel  .item{
+		max-height: 300px;
+	}
+	.p-30{
+	font-size: 30pt;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 1px 1px 5px #222;
+}
+
+	.container-card{
+		margin-top: 0px;
+	}
+}
+
+
+
+
+#sync1 .item {
+    background: #0c83e7;
+    padding: 80px 0px;
+    margin: 5px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+  }
+
+.current .item{
+    background: #0c83e7;
+  }
+}
+
+
+
+.owl-theme .owl-nav .disabled:hover[class*='owl-'] {
+      transition: all .3s ease;
+      }   
+   
+
+//arrows on first carousel
+#sync1.owl-theme {
+  position: relative;
+}
+  .owl-next, .owl-prev {
+    width: 22px;
+    height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    top: 50%;
+  }
+  .owl-prev {
+    left: 10px;
+  }
+  .owl-next {
+    right: 10px;
+  }
